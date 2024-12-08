@@ -7,7 +7,9 @@ Utilizei Vitest, que é praticamente um JEST só que do vite para realizar os te
 O Input de texto fiz ele componentizado para poder utilizar ele em todo o projeto(No caso, na tela de Login e de Signup)
 
 Na tela de LOGIN, fiz a validação utilizando useState
-Na tela de formulário, criei meu próprio hook e utilizando useReducer para validar diversos campos, alem de ter feito a validação de forma genérica para que possa ser utilizado em outros formulários e lugares
+Na tela de SIGNUP , criei meu próprio hook e utilizando useReducer para validar diversos campos, alem de ter feito a validação de forma genérica para que possa ser utilizado em outros formulários e lugares
+
+Utilizei os dois métodos para mostrar e exemplicar ambos os hooks
 
 Para Rodar o código utilize NPM "https://nodejs.org/en/download/package-manager"
 
