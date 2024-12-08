@@ -15,18 +15,19 @@ const Input: React.FC<InputProps> = ({
     <div>
       <label className="text-lg font-medium" htmlFor={name}>
         {label}
+
+        <input
+          className="w-full border-2 border-gray-100 rounded-xl p-4 mt-1 bg-transparent"
+          placeholder={placeHolderText}
+          name={name}
+          id={name}
+          onChange={onChange}
+          onBlur={onBlur}
+          value={value}
+          type={type}
+        />
+        {error && <p className="text-red-500 text-sm">{error}</p>}
       </label>
-      <input
-        className="w-full border-2 border-gray-100 rounded-xl p-4 mt-1 bg-transparent"
-        placeholder={placeHolderText}
-        name={name}
-        id={name}
-        onChange={onChange}
-        onBlur={onBlur}
-        value={value}
-        type={type}
-      />
-      {error && <p className="text-red-500 text-sm">{error}</p>}
     </div>
   );
 };
